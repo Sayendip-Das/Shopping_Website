@@ -1,0 +1,605 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    
+}
+
+body{
+    width: 100vw;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #088178;
+
+}
+
+
+/* Underline Effect in our NavBar List of Items*/
+/* We use Pseudo Classes */
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+/* Home Page */
+#hero{
+    display: flex;
+    background-image: url("img/hero4.png");
+    height: 115vh;
+    width: 100%;
+    background-position: top 15% right 0;
+    background-size: cover;
+    padding: 0px 150px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-repeat: no-repeat;
+
+}
+
+#hero h4{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+#hero h2{
+    font-size: 50px;
+}
+
+p{
+    font-size: 30px;
+}
+
+#hero h1{
+    color: #088178;
+    font-size: 50px;
+}
+
+/* Shop Now Button Styling */
+#hero button{
+    margin-top: 30px;
+    background-image: url("img/button.png");
+    color: #088178;
+    border: 0;
+    background-color: transparent;
+    padding: 14px 80px 14px 65px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* All The Features Boxes */
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Features Sectiion */
+.section-p1{
+    padding: 40px 70px;
+}
+
+
+/* Features Styling */
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 25px rgba(0, 0, 0, 0.06);
+    border: 2px solid #eebbc6;
+    border-radius: 4px;
+    margin: 15px;
+}
+
+#feature .fe-box:nth-child(2){
+    border: 2px solid #b8ec99;    
+}
+
+#feature .fe-box:nth-child(3){
+    border: 2px solid #b1d8e9;    
+}
+
+#feature .fe-box:nth-child(4){
+    border: 2px solid #959dc6;    
+}
+
+#feature .fe-box:nth-child(5){
+    border: 2px solid #c27fc2;    
+}
+
+#feature .fe-box:nth-child(6){
+    border: 2px solid #e0c4a7;    
+}
+
+
+#feature .fe-box:hover{
+    box-shadow: 20px 20px 40px rgba(27, 25, 56, 0.4);    
+}
+
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+/* Free Shipping Text */
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
+
+/* With refrence to first Feature, For second Feature(Online-Order) */
+#feature .fe-box:nth-child(2) h6{
+    background-color: #cdebbc;
+}
+
+/* For Feature-3 (Save Money) */
+#feature .fe-box:nth-child(3) h6{
+    background-color: #d1e8f2;
+}
+
+/* For Feature-4 (Promotions) */
+#feature .fe-box:nth-child(4) h6{
+    background-color: #cdd4f8;
+}
+
+/* For Feature-5 (Happy Sell) */
+#feature .fe-box:nth-child(5) h6{
+    background-color: #f6dbf6;
+}
+
+/* For Feature-6 (Support) */
+#feature .fe-box:nth-child(6) h6{
+    background-color: #fff2e5;
+}
+
+
+
+/* ***********************  Featured Products  *************************** */
+
+/* Featured Products */
+#product1{
+    text-align: center;
+}
+
+#product1 .product-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#product1 h2{
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+#product1 p{
+    font-size: 20px;
+    margin-bottom: 20px;    
+}
+
+/* First Product */
+#product1 .product{
+    width: 23%;
+    min-width: 250px;
+    margin: 30px 17px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;   
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow:  10px 20px 30px  rgba(0, 0, 0, 0.121);
+    position: relative;
+}
+
+#product1 .product:hover{
+    box-shadow:  10px 20px 30px  rgba(0, 0, 0, 0.358); 
+    transition: 0.7s ease;   
+}
+
+/* Product Image Part */
+#product1 .product img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* Product Description Part */
+#product1 .product .description{
+    text-align: start;
+    padding: 10px 0;
+}
+
+/* Brand Name */
+#product1 .product .description span{
+    color: #54a6ca;
+    font-size: 18px;
+}
+
+/* Product Name */
+#product1 .product .description h5{
+    color: #1a1a1a;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+/* Star Icons */
+#product1 .product .description i{
+    font-size: 22px;
+    color: rgb(242, 182, 31);
+}
+
+/* Price Tag */
+#product1 .product .description h4{
+    padding-top: 7px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#product1 .product .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e0f6e3;
+    font-weight: 700;
+    color: #25726d;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+/* *************************  Banner Section   ************************* */
+
+.section-p2{
+    margin: 50px 0;
+
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("img/banner/b2.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4{
+    color: #fff;
+    font-size: 20px;
+}
+
+#banner h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 16px 0;   
+}
+
+#banner h2 span{
+    color: rgb(239, 255, 58);
+    font-size: 40px;
+}
+
+#banner button{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 0;
+    border-radius: 8px;
+    padding: 20px 30px;    
+}
+
+#banner button:hover{
+    background-color: #088178;
+    color: white;
+    font-size: 23px;
+    transition: 0.4s ease;
+}
+
+
+
+/******************** Call To Action Bannner Styling ********************/
+
+#sm-banner .banner-box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("img/banner/b17.jpg");
+    min-width: 645px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Banner 2 Styling and Setting image */
+#sm-banner .banner-box2{
+    background-image: url("img/banner/b10.jpg");
+}
+
+#sm-banner{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+/* All text content inside the banner image */
+/* All are present at flex-start */
+#sm-banner .banner-box1{
+    display: flex;
+    align-items: flex-start;
+    padding-left: 30px;
+    
+}
+
+#sm-banner .banner-box1 h4{
+    color: white;
+    font-size: 25px; 
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#sm-banner .banner-box1 h2{
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 5px;
+
+}
+
+#sm-banner .banner-box1 span{
+   color: white;
+   font-size: 20px;
+   font-weight: 400;
+   margin-bottom: 5px;
+}
+
+#sm-banner .banner-box1 button{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 13px 20px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#sm-banner .banner-box1:hover button{
+    background-color: #0a8d84;
+    color: white;
+    transition: 0.8s ease;
+    border: 2ps solid white;
+}
+
+
+/******************** 3 Bannners Styling Section ***********************/
+
+/* 1st Banner from Banner3 Styling */
+#banner3 .banner-box3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("img/banner/b7.jpg");
+    min-width: 30%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center; 
+    margin-bottom: 30px; 
+}
+
+#banner3 .banner-box3:hover h3{
+    color: red;
+}
+
+
+/* All Text Content Inside the Banner3 */
+#banner3 .banner-box3{
+    display: flex;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+
+
+/* h2 Styling in Banner3 */
+#banner3 .banner-box3 h2{
+    color: white;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+
+/* h3 Styling in Banner3 */
+#banner3 .banner-box3 h3{
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+
+
+/* 3 Different Banners Styling with Bg-Image */
+#banner3{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0 65px;
+}
+
+
+#banner3 .banner-box3-2{
+    background-image: url("img/banner/b4.jpg");
+   
+}
+
+#banner3 .banner-box3-2:hover h3{
+    color: red;
+   
+} 
+
+#banner3 .banner-box3-2 h3{
+    font-weight: bolder;
+}
+
+
+
+#banner3 .banner-box3-3{
+    background-image: url("img/banner/b18.jpg");
+}
+
+#banner3 .banner-box3-3:hover h3{
+    color: red;
+}
+
+
+/* News Letter Section */
+
+#news-letter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("img/banner/b14.png");
+    background-repeat: no-repeat;
+    background-position: 30% 30%;
+    background-color: #041e42;
+    margin-top: 15px;
+    padding: 30px 120px;
+}
+
+#news-letter .newstext .head{
+    color: white;
+    font-size: 26px;
+}
+
+#news-letter .newstext .para{
+    color: white;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+#news-letter .newstext .para #colortext{
+    color: yellow;
+    font-size: 20px;
+}
+
+/* News Style Search and Button Section */
+#news-letter .form{
+    display: flex;
+    min-width: 40%;
+}
+
+#news-letter .form input{
+    height: 3rem;
+    padding: 0 4rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    outline: none;
+}
+
+#news-letter .form button{
+    height: 3.11rem;
+    white-space: nowrap;
+    padding: 0 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #088178;
+}
+
+/* Footer Section */
+
+.section-p3{
+    padding: 40px 50px;
+}
+
+.section-p3 .col h4{
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.section-p3 .col p strong{
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.section-p3 .col p{
+    font-size: 16px;
+    font-weight: 300;
+    color: dimgrey;
+    padding: 10px 0;
+}
+
+.follow .icon i{
+    padding: 0 4px;
+}
